@@ -16,7 +16,8 @@ git clone --recursive https://github.com/sethgi/realsense_python.git
 cd realsense_python
 mkdir build && cd build
 cmake ..
-make
+make -j
+sudo make install # optional, but recommended.
 ```
 
 The compiled module will be available to import in Python from the build directory.
